@@ -1,0 +1,43 @@
+# /!\ : some scenarios may have specific values for some parameters
+#       see the scenario's launchfile
+
+
+#time step between each node (s)
+timeStep: 0.5
+#maximum depth a node can have
+maxDepth: 100
+#discretization of the robot's linear speed, used to create the set of possible controls from a node
+nv: 3
+#discretization of the robot's angular speed, used to create the set of possible controls from a node
+nphi: 10
+#maximum risk value a node can have to be considered free
+threshold: 0.9
+#weight of the risk component in the computation of the node's score
+socialWeight: 10
+#weight of the node's orientation toward the goal (compared to the distance)
+rotationWeight: 5
+#time allocated for the tree growth between map updates (s)
+growTime: 0.5
+#percentage of the time the final goal is chosen as random goal
+bias: 0.005
+#maximum distance the robot can be from the final goal to consider the goal reached (m)
+goalTh: 0.5
+#size of the window from which to pick a random goal (m)
+windowSize: 15.0
+#robot lenght (m) /!\: the wheel axis is assumed to be in the middle
+robotLength: 2.588
+#robot width (m)
+robotWidth: 1.5110
+#minimum robot linear speed (m/s), set it to 0 or a negative value to allow reverse
+vMin: 0.0
+#maximum robot linear speed (m/s)
+vMax: 2.0
+#maximum linear acceleration (m/s^2)
+accMax: 2.0
+#maximum angular speed (rad/s)
+omegaMax: 5.0
+#maximum angular acceleration (rad/s^2)
+accOmegaMax: 20.0
+#maximum steering angle (rad/s)
+maxSteeringAngle: 30.0
+
